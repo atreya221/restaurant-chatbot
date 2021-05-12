@@ -7,6 +7,7 @@ nlu:
     - hello
     - hi
     - hello there
+    - hemlo
     - good morning
     - good evening
     - moin
@@ -25,68 +26,55 @@ nlu:
     - cee you later
     - good night
     - bye
+    - tata
     - goodbye
     - have a nice day
     - see you around
     - bye bye
     - see you later
 
-- intent: affirm
+- intent: book
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - I want to reserve a table
+    - I want to book a table
+    - I want a dinner booking
+    - Book a table for me
+    - Book a table for 4 people
+    - I want to reserve a table for a party of 4
+    - Book a dinner for 9 around 7:30pm
+    - Please can you book a table for 2 members in half an hour?
+    - Book a dinner for me in 10 minutes
+    - I want to book a table in 1 hr
+    - I want to reserve a table for a party of 3 in non-AC section
+    - I want an AC booking for a party of 4
+    - Please book a table for me in AC section in one hour
+    - Book a non-AC dinner for me at 10 pm
+    - could you book a non-AC dinner for a 7 member party at around 8:45pm
+    - I want a AC dinner booking for 5 guests in 40 minutes
+    - I want to reserve an AC dinner
+    - Book a non-AC table for me please
 
-- intent: deny
+- intent: time
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - in half an hour
+    - at 7:30pm
+    - in 20 minutes
+    - 9 pm
+    - in 2 hrs
+    - at half past 9
+    - 8 tonight
 
-- intent: mood_great
+- intent: section
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - AC
+    - Non-AC
 
-- intent: mood_unhappy
+- intent: seats
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - 2 seats
+    - 7
+    - 5 people
+    - 4 members
+    - 11 peeps
+    - for a party of 9
+    - 3 seats for a party
