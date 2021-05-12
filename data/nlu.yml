@@ -39,42 +39,42 @@ nlu:
     - I want to book a table
     - I want a dinner booking
     - Book a table for me
-    - Book a table for 4 people
-    - I want to reserve a table for a party of 4
-    - Book a dinner for 9 around 7:30pm
-    - Please can you book a table for 2 members in half an hour?
-    - Book a dinner for me in 10 minutes
-    - I want to book a table in 1 hr
-    - I want to reserve a table for a party of 3 in non-AC section
-    - I want an AC booking for a party of 4
-    - Please book a table for me in AC section in one hour
-    - Book a non-AC dinner for me at 10 pm
-    - could you book a non-AC dinner for a 7 member party at around 8:45pm
-    - I want a AC dinner booking for 5 guests in 40 minutes
-    - I want to reserve an AC dinner
-    - Book a non-AC table for me please
+    - Book a table for [4]{"entity":"seats"} people
+    - I want to reserve a table for a party of [4]{"entity":"seats"}
+    - Book a dinner for [9]{"entity":"seats"} around [7:30pm]{"entity":"time"}
+    - Please can you book a table for [2]{"entity":"seats"} members in [half an hour]{"entity":"time"}?
+    - Book a dinner for me in [10 minutes]{"entity":"time"}
+    - I want to book a table in [1 hr]{"entity":"time"}
+    - I want to reserve a table for a party of [3]{"entity":"seats"} in [non-AC]{"entity":"section"} section
+    - I want an [AC]{"entity":"section"} booking for a party of [4]{"entity":"seats"}
+    - Please book a table for me in [AC]{"entity":"section"} section in [one hour]{"entity":"time"}
+    - Book a [non-AC]{"entity":"section"} dinner for me at [10 pm]{"entity":"time"}
+    - could you book a [non-AC{"entity":"section"} dinner for a [7]{"entity":"seats"} member party at around [8:45pm]{"entity":"time"}
+    - I want a [AC]{"entity":"section"} dinner booking for [5]{"entity":"seats"} in [40 minutes]{"entity":"time"}
+    - I want to reserve an [AC]{"entity":"section"} dinner
+    - Book a [non-AC]{"entity":"section"} table for me please
 
 - intent: time
   examples: |
-    - in half an hour
-    - at 7:30pm
-    - in 20 minutes
-    - 9 pm
-    - in 2 hrs
-    - at half past 9
-    - 8 tonight
+    - in [half an hour]{"entity":"time"}
+    - at [7:30pm]{"entity":"time"}
+    - in [20 minutes]{"entity":"time"}
+    - [9 pm]{"entity":"time"}
+    - in [2 hrs]{"entity":"time"}
+    - at [half past 9]{"entity":"time"}
+    - [8 tonight]{"entity":"time"}
 
 - intent: section
   examples: |
-    - AC
-    - Non-AC
+    - [AC]{"entity":"section"}
+    - [Non-AC]{"entity":"section"}
 
 - intent: seats
   examples: |
-    - 2 seats
-    - 7
-    - 5 people
-    - 4 members
-    - 11 peeps
-    - for a party of 9
-    - 3 seats for a party
+    - [2]{"entity":"seats"} seats
+    - [7]{"entity":"seats"}
+    - [5]{"entity":"seats"} people
+    - [4]{"entity":"seats"} members
+    - [11]{"entity":"seats"} peeps
+    - for a party of [9]{"entity":"seats"}
+    - [3]{"entity":"seats"} seats for a party
