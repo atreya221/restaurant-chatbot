@@ -52,8 +52,8 @@ intents:
 
 slots:
   time:
-    type: addons.custom_slots.TimeSlot
-    influence_conversation: True
+    type: text
+    influence_conversation: False
   section:
     type: categorical
     values:
@@ -62,10 +62,9 @@ slots:
     influence_conversation: False
   seats:
     type: float
-    min_value: 1.0
     influence_conversation: False
 
-templates:
+responses:
   utter_greeting:
     - text: "Hello! Welcome to Atreya's Multi-cuisine restaurant. How can I help you?"
   utter_goodbye:  
