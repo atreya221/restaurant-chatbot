@@ -79,9 +79,9 @@ responses:
     - text: "Which section would you like to book?"
       buttons:
         - title: "AC"
-          payload: '/choose{"section":"AC"}'
+          payload: '/section{{"section":"AC"}}'
         - title: "Non-AC"
-          payload: '/choose{"section":"Non-AC"}'
+          payload: '/section{{"section":"Non-AC"}}'
   utter_booking_confirmation:
     - text: "You have reserved {seats} seats in our {section} section for {time}. Thanks!"
 
