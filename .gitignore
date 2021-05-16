@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 venv/
 models/
+.vscode/
+*.dot
+venv2/
+events.*
+*.db
