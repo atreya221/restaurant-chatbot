@@ -32,37 +32,41 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - thank u so much
+    - Thanks
 
 - intent: book
   examples: |
+    - Book
+    - Reserve
     - I want to reserve a table
     - I want to book a table
     - I want a dinner booking
     - Book a table for me
     - Book a table for [4]{"entity":"seats"} people
     - I want to reserve a table for a party of [4]{"entity":"seats"}
-    - Book a dinner for [9]{"entity":"seats"} around [7:30pm]{"entity":"time"}
-    - Please can you book a table for [2]{"entity":"seats"} members in [half an hour]{"entity":"time"}?
-    - Book a dinner for me in [10 minutes]{"entity":"time"}
-    - I want to book a table in [1 hr]{"entity":"time"}
+    - Book a dinner for [9]{"entity":"seats"} around 7:30pm
+    - Please can you book a table for [2]{"entity":"seats"} members in half an hour?
+    - Book a dinner for me in 10 minutes
+    - I want to book a table in 1 hr
     - I want to reserve a table for a party of [3]{"entity":"seats"} in [non-AC]{"entity":"section"} section
     - I want an [AC]{"entity":"section"} booking for a party of [4]{"entity":"seats"}
-    - Please book a table for me in [AC]{"entity":"section"} section in [one hour]{"entity":"time"}
-    - Book a [non-AC]{"entity":"section"} dinner for me at [10 pm]{"entity":"time"}
-    - could you book a [non-AC{"entity":"section"} dinner for a [7]{"entity":"seats"} member party at around [8:45pm]{"entity":"time"}
+    - Please book a table for me in [AC]{"entity":"section"} section in one hour
+    - Book a [non-AC]{"entity":"section"} dinner for me at 10 pm
+    - could you book a [non-AC]{"entity":"section"} dinner for a [7]{"entity":"seats"} member party at around [8 pm]{"entity":"time"}
     - I want a [AC]{"entity":"section"} dinner booking for [5]{"entity":"seats"} in [40 minutes]{"entity":"time"}
     - I want to reserve an [AC]{"entity":"section"} dinner
     - Book a [non-AC]{"entity":"section"} table for me please
 
 - intent: time
   examples: |
-    - in [half an hour]{"entity":"time"}
-    - at [7:30pm]{"entity":"time"}
-    - in [20 minutes]{"entity":"time"}
-    - [9 pm]{"entity":"time"}
-    - in [2 hrs]{"entity":"time"}
-    - at [half past 9]{"entity":"time"}
-    - [8 tonight]{"entity":"time"}
+    - in half an hour
+    - at 7:30pm
+    - in 20 minutes
+    - 9 pm
+    - in 2 hrs
+    - at half past 9
+    - 8 tonight
 
 - intent: section
   examples: |
@@ -78,3 +82,47 @@ nlu:
     - [11]{"entity":"seats"} peeps
     - for a party of [9]{"entity":"seats"}
     - [3]{"entity":"seats"} seats for a party
+
+- intent: faq/timings
+  examples: |
+    - What are your timings?
+    - When does the restaurant open?
+    - When does the restaurant close?
+    - When can I book a dinner?
+    - What are the available time slots?
+    - What time will u open today?
+    - timings?
+
+- intent: faq/days
+  examples: |
+    - What days are you open?
+    - On which days does the restaurant open?
+    - Which days are u available?
+    - Tell me which days are u open.
+    - Tell me your working days.
+    - Are u open on Sunday?
+    - Do you open on Saturday?
+    - Is the restaurant open on Thursday?
+    - Does the restaurant remain closed on Sunday?
+
+- intent: faq/cancel
+  examples: |
+    - How do I cancel a reservation.
+    - How to cancel a reservation?
+    - How do I cancel my booking?
+    - Could you cancel my booking?
+    - Cancel
+    - Kindly cancel my reserved dinner.
+    - Please cancel request.
+    - Cancellation policy.
+    - how to cancel booking.
+
+- intent: faq/specials
+  examples: |
+    - What are the specials?
+    - What is your special menu?
+    - Do you have any special menu?
+    - May I please know about the special dishes?
+    - Could you please tell me about the special cuisines available?
+    - Tell me about your special menu.
+    - Specials

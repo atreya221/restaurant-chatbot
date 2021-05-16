@@ -2,21 +2,19 @@ version: "2.0"
 
 forms:
   restaurant_form:
-    ignored_intents: 
+    ignored_intents:
     - greet
     - goodbye
     required_slots:
       seats:
         - type: from_entity
           entity: seats
-      time:
-        - type: from_entity
-          entity: time
       section:
         - type: from_entity
           entity: section
 
 actions:
+  - validate_restaurant_form
   - utter_greeting
   - utter_goodbye
   - utter_booking_confirmation
@@ -49,6 +47,7 @@ intents:
         - seats
   - goodbye:
       use_entities: []
+  - faq
 
 slots:
   time:
@@ -70,7 +69,7 @@ responses:
   utter_goodbye:  
     - text: "Thank you for using our services. See you again!"
   utter_ask_time:
-    - text: "When would you like to book a reservation? (We are only open from 7pm to 10pm)"
+    - text: "At what time would you like to book a reservation?"
   utter_unclear:
     - text: "Sorry, I could not understand. Could you please frame your query in a different way?"
   utter_ask_seats:
@@ -84,6 +83,14 @@ responses:
           payload: '/section{{"section":"Non-AC"}}'
   utter_booking_confirmation:
     - text: "You have reserved {seats} seats in our {section} section for {time}. Thanks!"
+  utter_faq/timings:
+    - text: "The restaurant opens at 7pm and closes at 10pm."
+  utter_faq/days:
+    - text: "The restaurant is open each and every day."
+  utter_faq/cancel:
+    - text: "To cancel a reservation, simply call us at +91-1234567890 and cancel your reservation."
+  utter_faq/specials:
+    - text: "Our chef is a master of the Italian cuisine. Our core speciality is our pasta, which is renowned throughout the city."
 
 session_config:
   session_expiration_time: 60

@@ -27,3 +27,8 @@ rules:
   - slot_was_set:
     - requested_slot: null
   - action: utter_booking_confirmation
+
+- rule: respond to FAQs
+  steps:
+  - intent: faq
+  - action: utter_faq
