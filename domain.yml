@@ -9,6 +9,7 @@ forms:
       seats:
         - type: from_entity
           entity: seats
+          not_intent: time
       section:
         - type: from_entity
           entity: section
@@ -51,7 +52,7 @@ intents:
 
 slots:
   time:
-    type: text
+    type: unfeaturized
     influence_conversation: False
   section:
     type: categorical
