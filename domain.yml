@@ -49,6 +49,7 @@ intents:
   - goodbye:
       use_entities: []
   - faq
+  - nlu_fallback
 
 slots:
   time:
@@ -83,7 +84,7 @@ responses:
         - title: "Non-AC"
           payload: '/section{{"section":"Non-AC"}}'
   utter_booking_confirmation:
-    - text: "You have reserved {seats} seats in our {section} section for {time}. Thanks!"
+    - text: "You have reserved {seats} seat(s) in our {section} section for {time}. Thanks!"
   utter_faq/timings:
     - text: "The restaurant opens at 7pm and closes at 10pm."
   utter_faq/days:
