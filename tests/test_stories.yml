@@ -105,3 +105,358 @@ stories:
   - intent: goodbye
   - action: utter_goodbye
 
+- story: Story from Conversation ID 1227f01a399340dfbbafe93d47d878e4
+  steps:
+  - intent: greet
+  - action: utter_greeting
+  - intent: book
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - requested_slot: seats
+  - intent: seats
+    entities:
+    - seats: '7'
+  - slot_was_set:
+    - seats: '7'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - seats: '7'
+  - slot_was_set:
+    - requested_slot: section
+  - intent: section
+    entities:
+    - section: Non-AC
+  - slot_was_set:
+    - section: Non-AC
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - section: Non-AC
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: faq
+  - action: utter_faq
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Story from Conversation ID 1227f01a399340dfbbafe93d47d878e4
+  steps:
+  - intent: greet
+  - action: utter_greeting
+  - intent: book
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - requested_slot: seats
+  - intent: seats
+    entities:
+    - seats: '7'
+  - slot_was_set:
+    - seats: '7'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - seats: '7'
+  - slot_was_set:
+    - requested_slot: section
+  - intent: section
+    entities:
+    - section: Non-AC
+  - slot_was_set:
+    - section: Non-AC
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - section: Non-AC
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: faq
+  - action: utter_faq
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID cad479f46b5d45829f943b40ae22a1c9
+  steps:
+  - intent: book
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T17:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T17:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T20:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T20:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 20:00
+  - slot_was_set:
+    - requested_slot: seats
+  - intent: seats
+    entities:
+    - seats: '4'
+  - slot_was_set:
+    - seats: '4'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 20:00
+  - slot_was_set:
+    - seats: '4'
+  - slot_was_set:
+    - requested_slot: section
+  - intent: section
+    entities:
+    - section: AC
+  - slot_was_set:
+    - section: AC
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 20:00
+  - slot_was_set:
+    - section: AC
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID fb9648056bf5491ba34edc94e4e7a4b2
+  steps:
+  - intent: book
+    entities:
+    - section: AC
+  - slot_was_set:
+    - section: AC
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - section: AC
+  - slot_was_set:
+    - requested_slot: time
+  - slot_was_set:
+    - section: AC
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T18:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T18:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - requested_slot: seats
+  - intent: seats
+    entities:
+    - seats: '3'
+  - slot_was_set:
+    - seats: '3'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - seats: '3'
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: faq
+  - action: utter_faq
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 52e0223be55145569b1196a22a62908a
+  steps:
+  - intent: greet
+  - action: utter_greeting
+  - intent: book
+    entities:
+    - seats: '4'
+    - section: Non-AC
+  - slot_was_set:
+    - section: Non-AC
+  - slot_was_set:
+    - seats: '4'
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - section: Non-AC
+  - slot_was_set:
+    - seats: '4'
+  - slot_was_set:
+    - requested_slot: time
+  - slot_was_set:
+    - section: Non-AC
+  - slot_was_set:
+    - seats: '4'
+  - slot_was_set:
+    - requested_slot: time
+  - intent: faq
+    entities:
+    - time: '2021-05-21T20:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T20:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 20:00
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: faq
+  - action: utter_faq
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID bf89dfa73f194b4f997f1eb9eef8fbcb
+  steps:
+  - intent: greet
+  - action: utter_greeting
+  - intent: book
+    entities:
+    - section: AC
+    - time: '2021-05-21T19:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T19:00:00.000-07:00'
+  - slot_was_set:
+    - section: AC
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - time: 19:00
+  - slot_was_set:
+    - section: AC
+  - slot_was_set:
+    - requested_slot: seats
+  - slot_was_set:
+    - time: 19:00
+  - slot_was_set:
+    - section: AC
+  - slot_was_set:
+    - requested_slot: seats
+  - intent: seats
+    entities:
+    - seats: '1'
+  - slot_was_set:
+    - seats: '1'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 19:00
+  - slot_was_set:
+    - seats: '1'
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 763662d958374943bcd5f7da2e3788ed
+  steps:
+  - intent: book
+    entities:
+    - section: non-AC
+    - seats: '4'
+  - slot_was_set:
+    - section: non-AC
+  - slot_was_set:
+    - seats: '4'
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  - slot_was_set:
+    - section: non-AC
+  - slot_was_set:
+    - seats: '4'
+  - slot_was_set:
+    - requested_slot: time
+  - slot_was_set:
+    - section: non-AC
+  - slot_was_set:
+    - seats: '4'
+  - slot_was_set:
+    - requested_slot: time
+  - intent: time
+    entities:
+    - time: '2021-05-21T13:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T13:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: null
+  - slot_was_set:
+    - requested_slot: time
+  - intent: nlu_fallback
+    entities:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - slot_was_set:
+    - time: '2021-05-21T21:00:00.000-07:00'
+  - action: restaurant_form
+  - slot_was_set:
+    - time: 21:00
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_booking_confirmation
+  - intent: goodbye
+  - action: utter_goodbye
